@@ -27,6 +27,7 @@ router.get('/freelance', function (req, res) {
 router.get('/results', function (req, res) {
 	const { a1, a2, a3, a4, a5, a6 } = req.query
 	const resultsData = getResults(a1, a2, a3, a4, a5, a6)
+	console.log(resultsData);
 	if (!resultsData) {
 		res.status(400).send('Not found.')
 	} else {

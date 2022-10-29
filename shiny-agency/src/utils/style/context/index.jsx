@@ -1,5 +1,4 @@
-import React from "react";
-import { createContext , useState } from "react";
+import React ,  { createContext , useState } from "react";
 
 export  const ThemeContext = createContext();
 
@@ -22,7 +21,6 @@ export const SurveyProvider = ({ children }) => {
   const [answers, setAnswers] = useState({})
   const saveAnswers = (newAnswers) => {
     setAnswers({ ...answers, ...newAnswers })
-    console.log(answers)
   }
 
   return (

@@ -2,7 +2,6 @@ import React from 'react'
 import { useContext } from 'react'
 import { ThemeContext } from './context'
 import { createGlobalStyle } from 'styled-components'
-console.log(ThemeContext)
 const StyledGlobalStyle = createGlobalStyle`
     div {
         font-family: 'Trebuchet MS', Helvetica, sans-serif;
